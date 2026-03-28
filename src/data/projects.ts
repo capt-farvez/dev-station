@@ -2,6 +2,23 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    slug: "ml-diabetes-predictor",
+    title: "ML Diabetes Predictor",
+    description:
+      "A machine learning web app that predicts diabetes likelihood from health metrics using a Random Forest model.",
+    longDescription:
+      "ML Diabetes Predictor is a machine learning web application that lets users input 8 medical parameters — pregnancies, glucose, blood pressure, skin thickness, insulin, BMI, diabetes pedigree function, and age — and instantly receive a diabetes risk prediction. The backend is built with Flask and uses a Random Forest Classifier (20 estimators) trained on a cleaned diabetes dataset. The ML pipeline handles missing-value imputation (mean for glucose/blood pressure, median for skin thickness/insulin/BMI) before training. The trained model is serialized with pickle for fast inference. The app includes a clean HTML form UI, a /predict endpoint for predictions, and an /about page showing model accuracy. Containerized with Docker and deployed on Render.",
+    category: "ai",
+    coverImage: "/images/projects/ai/ml-diabetes-predictor.svg",
+    techStack: ["Python", "Flask", "scikit-learn", "pandas", "Docker"],
+    featured: true,
+    links: {
+      live: "https://ml-diabetes-predictor-p3pz.onrender.com",
+      source: "https://github.com/capt-farvez/ml-diabetes-predictor",
+    },
+    date: "2025-06-10",
+  },
+  {
     slug: "bss-rms",
     title: "BSS Restaurant Management System",
     description:

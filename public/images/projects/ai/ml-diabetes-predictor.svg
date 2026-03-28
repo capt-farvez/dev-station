@@ -1,0 +1,22 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#18181b"/>
+  <!-- Accent circle -->
+  <circle cx="600" cy="260" r="80" fill="#a855f7" opacity="0.15"/>
+  <!-- Heartbeat/health + brain icon -->
+  <g transform="translate(600, 260)" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Heart rate line -->
+    <polyline points="-40,5 -25,5 -15,-25 0,30 10,-15 20,5 40,5" fill="none"/>
+    <!-- Stethoscope circle -->
+    <circle cx="0" cy="-10" r="32" stroke-width="2" opacity="0.4"/>
+    <!-- Small data nodes -->
+    <circle cx="-25" cy="-30" r="3" fill="#a855f7" opacity="0.6"/>
+    <circle cx="25" cy="-30" r="3" fill="#a855f7" opacity="0.6"/>
+    <circle cx="0" cy="35" r="3" fill="#a855f7" opacity="0.6"/>
+  </g>
+  <!-- Project name -->
+  <text x="600" y="390" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700">ML Diabetes Predictor</text>
+  <!-- Subtitle -->
+  <text x="600" y="425" text-anchor="middle" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="18">Machine Learning Health Prediction</text>
+  <!-- Accent line -->
+  <rect x="560" y="445" width="80" height="3" rx="1.5" fill="#a855f7" opacity="0.6"/>
+</svg>
