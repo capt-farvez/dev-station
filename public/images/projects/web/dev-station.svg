@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#18181b"/>
+  <circle cx="600" cy="280" r="90" fill="#065f46" opacity="0.5"/>
+  <circle cx="600" cy="280" r="70" fill="#059669" opacity="0.6"/>
+  <!-- Rocket icon -->
+  <g transform="translate(600, 275)">
+    <!-- Rocket body -->
+    <path d="M0,-45 C12,-45 18,-25 18,5 L18,20 L-18,20 L-18,5 C-18,-25 -12,-45 0,-45Z" fill="white" opacity="0.9"/>
+    <!-- Rocket nose cone -->
+    <path d="M0,-55 C6,-55 12,-45 12,-38 L-12,-38 C-12,-45 -6,-55 0,-55Z" fill="#d4d4d8"/>
+    <!-- Rocket window -->
+    <circle cx="0" cy="-10" r="7" fill="#18181b"/>
+    <circle cx="0" cy="-10" r="5" fill="#34d399"/>
+    <!-- Fins -->
+    <path d="M-18,10 L-30,25 L-18,20Z" fill="#10b981"/>
+    <path d="M18,10 L30,25 L18,20Z" fill="#10b981"/>
+    <!-- Flame -->
+    <path d="M-10,20 L0,40 L10,20Z" fill="#f59e0b" opacity="0.8"/>
+    <path d="M-5,20 L0,32 L5,20Z" fill="#fbbf24"/>
+  </g>
+  <!-- Project name -->
+  <text x="600" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="white">Dev Station</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#a1a1aa">Developer Portfolio</text>
+  <!-- Accent line -->
+  <rect x="500" y="490" width="200" height="3" rx="2" fill="#10b981"/>
+</svg>
