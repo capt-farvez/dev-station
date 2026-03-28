@@ -1,6 +1,19 @@
 import Link from "next/link";
+import { projects } from "@/data/projects";
 
 export default function HeroSection() {
+  const totalProjects = projects.length;
+  const totalTechnologies = new Set(projects.flatMap((p) => p.techStack)).size;
+  const playableGames = projects.filter((p) => p.category === "game").length;
+  const categories = new Set(projects.map((p) => p.category)).size;
+
+  const stats = [
+    { value: `${totalProjects}+`, label: "Projects" },
+    { value: `${totalTechnologies}+`, label: "Technologies" },
+    { value: `${playableGames}+`, label: "Playable Games" },
+    { value: `${categories}+`, label: "Categories" },
+  ];
+
   return (
     <section className="relative overflow-hidden border-b border-zinc-800 bg-zinc-950">
       {/* Background grid pattern */}
@@ -45,12 +58,7 @@ export default function HeroSection() {
 
           {/* Stats */}
           <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
-            {[
-              { value: "7+", label: "Projects" },
-              { value: "5+", label: "Technologies" },
-              { value: "2+", label: "Playable Games" },
-              { value: "3+", label: "Categories" },
-            ].map((stat) => (
+            {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl font-bold text-white">
                   {stat.value}
