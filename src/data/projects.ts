@@ -2,6 +2,23 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    slug: "bss-rms",
+    title: "BSS Restaurant Management System",
+    description:
+      "A full-stack restaurant management system with orders, analytics, expense tracking, and real-time dashboards.",
+    longDescription:
+      "BSS RMS is a comprehensive restaurant management platform built for Bangladesh Software Solution. The Angular SPA frontend paired with a clean architecture ASP.NET Core API covers the full restaurant workflow. Features include JWT authentication with sign-up/sign-in, an employee management module with image uploads, table management with employee-to-table assignments, a complete food inventory system, and a powerful order management flow with six status stages (Pending, Confirmed, Preparing, PreparedToServe, Served, Paid). The new-order page features infinite scroll food selection with a draggable floating cart. An expense tracking module records operational costs, and the Reports & Analytics page provides daily/monthly/yearly breakdowns of sales, expenses, and revenue with interactive bar and pie charts powered by ngx-charts. The real-time dashboard shows today's orders, table occupancy, available tables, total employees, recent orders, and top-selling items with revenue. Built with repository pattern, dependency injection, AutoMapper, Entity Framework Core, and fully documented via Swagger.",
+    category: "web",
+    coverImage: "/images/projects/web/bss-rms.svg",
+    techStack: ["Angular", "ASP.NET Core", "TypeScript", "SQL Server", "Tailwind CSS", "Entity Framework"],
+    featured: true,
+    links: {
+      live: "https://restaurant.farvez.me",
+      source: "https://github.com/capt-farvez/bss-rms",
+    },
+    date: "2025-10-01",
+  },
+  {
     slug: "siderian-cloud-admin",
     title: "Siderian Cloud Admin",
     description:
