@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Project, categoryLabels } from "@/types/project";
 import TechBadge from "./TechBadge";
@@ -13,12 +12,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {/* Cover Image */}
       <Link href={`/projects/${project.slug}`} className="relative block">
         <div className="relative aspect-video w-full overflow-hidden bg-zinc-800">
-          <Image
-            src={project.coverImage}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.coverImage}`}
             alt={project.title}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           {/* Category badge */}
           <div className="absolute left-3 top-3">

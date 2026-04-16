@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Project } from "@/types/project";
 import TechBadge from "../projects/TechBadge";
@@ -12,12 +11,11 @@ export default function GameCard({ game }: GameCardProps) {
     <div className="group overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 transition-all hover:border-purple-500/30 hover:bg-zinc-900">
       <Link href={game.links.play || `/projects/${game.slug}`} className="relative block">
         <div className="relative aspect-video w-full overflow-hidden bg-zinc-800">
-          <Image
-            src={game.coverImage}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${game.coverImage}`}
             alt={game.title}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, 50vw"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           {/* Play overlay */}
           <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/40">

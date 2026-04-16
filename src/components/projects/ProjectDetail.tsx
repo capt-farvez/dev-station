@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Project, categoryLabels } from "@/types/project";
 import TechBadge from "./TechBadge";
@@ -24,12 +23,11 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
 
       {/* Cover Image */}
       <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-zinc-800 bg-zinc-800">
-        <Image
-          src={project.coverImage}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.coverImage}`}
           alt={project.title}
-          fill
-          className="object-cover"
-          priority
+          className="absolute inset-0 h-full w-full object-cover"
         />
       </div>
 
