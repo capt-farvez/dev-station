@@ -216,14 +216,15 @@ export const projects: Project[] = [
     slug: "3d-shooter",
     title: "3D Shooter",
     description:
-      "An interactive 3D road scene with dynamic lighting and camera controls built with OpenGL.",
+      "An interactive 3D road scene with dynamic lighting and camera controls built with OpenGL, playable in the browser via Three.js.",
     longDescription:
-      "3D Shooter is an interactive 3D scene built with C++ and OpenGL featuring a road environment with buildings, dynamic lighting including directional and point lights using Phong shading via GLSL shaders. It includes camera controls, keyboard-triggered action sequences, audio integration, and character movement along predefined paths. Built as an educational/capstone project demonstrating advanced computer graphics concepts.",
+      "3D Shooter is an interactive 3D scene originally built with C++ and OpenGL, ported to Three.js for browser play. It features a road environment with 24 buildings, dynamic lighting including directional and point lights using Phong shading, first-person camera controls (WASD + mouse), a shooting mechanic, background music, and an animated enemy character. Built as a CSE 426 Computer Graphics lab project demonstrating advanced computer graphics concepts.",
     category: "game",
     coverImage: "/images/projects/games/3d-shooter.svg",
-    techStack: ["C++", "OpenGL", "GLSL"],
-    featured: false,
+    techStack: ["C++", "OpenGL", "GLSL", "Three.js"],
+    featured: true,
     links: {
+      play: "/play/3d-shooter",
       source: "https://github.com/capt-farvez/3D-Shooter",
     },
     date: "2024-02-01",

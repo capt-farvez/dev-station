@@ -31,24 +31,12 @@ export default function GameEmbed({ game }: GameEmbedProps) {
 
         {/* Game iframe container */}
         <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
-          <div className="flex h-full items-center justify-center">
-            <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-purple-500/10">
-                <svg className="h-8 w-8 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <p className="mt-4 text-lg font-medium text-zinc-300">
-                {game.title}
-              </p>
-              <p className="mt-2 text-sm text-zinc-500">
-                Game embed will load here. Add your HTML5 game build to{" "}
-                <code className="rounded bg-zinc-800 px-1.5 py-0.5 text-emerald-400">
-                  /public/games/{game.slug}/index.html
-                </code>
-              </p>
-            </div>
-          </div>
+          <iframe
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/games/${game.slug}/index.html`}
+            className="h-full w-full border-0"
+            allow="autoplay; fullscreen; pointer-lock"
+            allowFullScreen
+          />
         </div>
 
         <p className="mt-4 text-sm leading-relaxed text-zinc-400">
