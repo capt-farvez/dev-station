@@ -1,0 +1,28 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#18181b"/>
+  <!-- Accent circle -->
+  <circle cx="600" cy="260" r="80" fill="#ef4444" opacity="0.15"/>
+  <!-- Book/library icon -->
+  <g transform="translate(600, 260)" fill="none" stroke="#ef4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Open book spine -->
+    <line x1="0" y1="-28" x2="0" y2="28"/>
+    <!-- Left page -->
+    <path d="M0,-28 Q-18,-32 -34,-26 L-34,22 Q-18,16 0,22" fill="#ef4444" opacity="0.15" stroke="#ef4444"/>
+    <!-- Right page -->
+    <path d="M0,-28 Q18,-32 34,-26 L34,22 Q18,16 0,22" fill="#ef4444" opacity="0.15" stroke="#ef4444"/>
+    <!-- Left page lines -->
+    <line x1="-26" y1="-16" x2="-8" y2="-18"/>
+    <line x1="-26" y1="-6" x2="-8" y2="-8"/>
+    <line x1="-26" y1="4" x2="-8" y2="2"/>
+    <!-- Right page lines -->
+    <line x1="8" y1="-18" x2="26" y2="-16"/>
+    <line x1="8" y1="-8" x2="26" y2="-6"/>
+    <line x1="8" y1="2" x2="26" y2="4"/>
+  </g>
+  <!-- Project name -->
+  <text x="600" y="390" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700">Library API</text>
+  <!-- Subtitle -->
+  <text x="600" y="425" text-anchor="middle" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="18">Django REST + Celery + Redis</text>
+  <!-- Accent line -->
+  <rect x="560" y="445" width="80" height="3" rx="1.5" fill="#ef4444" opacity="0.6"/>
+</svg>

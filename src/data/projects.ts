@@ -196,4 +196,68 @@ export const projects: Project[] = [
     links: {},
     date: "2023-10-01",
   },
+  {
+    slug: "drf-celery-redis-libraryapi",
+    title: "Library API",
+    description:
+      "A Django REST Framework library API with Celery background tasks and Redis caching.",
+    longDescription:
+      "A production-ready Library API built with Django REST Framework, integrated with Celery for background task processing and Redis for caching and task queueing. Features include full CRUD operations for library resources, filtering and search capabilities, asynchronous task processing via Celery workers, Redis-based caching for improved performance, and a Docker-ready setup for easy deployment.",
+    category: "web",
+    coverImage: "/images/projects/web/drf-library-api.svg",
+    techStack: ["Django REST Framework", "Celery", "Redis", "PostgreSQL", "Docker"],
+    featured: false,
+    links: {
+      source: "https://github.com/capt-farvez/drf-celery-redis-libraryapi",
+    },
+    date: "2024-11-01",
+  },
+  {
+    slug: "3d-shooter",
+    title: "3D Shooter",
+    description:
+      "An interactive 3D road scene with dynamic lighting and camera controls built with OpenGL.",
+    longDescription:
+      "3D Shooter is an interactive 3D scene built with C++ and OpenGL featuring a road environment with buildings, dynamic lighting including directional and point lights using Phong shading via GLSL shaders. It includes camera controls, keyboard-triggered action sequences, audio integration, and character movement along predefined paths. Built as an educational/capstone project demonstrating advanced computer graphics concepts.",
+    category: "game",
+    coverImage: "/images/projects/games/3d-shooter.svg",
+    techStack: ["C++", "OpenGL", "GLSL"],
+    featured: false,
+    links: {
+      source: "https://github.com/capt-farvez/3D-Shooter",
+    },
+    date: "2024-02-01",
+  },
+  {
+    slug: "ai-chat-log-summarizer",
+    title: "AI Chat Summarizer",
+    description:
+      "A Python tool that analyzes chat logs and generates summaries with keyword extraction.",
+    longDescription:
+      "AI Chat Log Summarizer is a Python tool that analyzes conversation logs and generates comprehensive summaries with statistics. It separates chat logs by speaker (User vs. AI), generates message statistics and counts, extracts top keywords using NLTK (excluding stopwords), supports batch processing of multiple chat logs from directories, and produces summary reports with conversation topics.",
+    category: "tool",
+    coverImage: "/images/projects/tools/ai-chat-summarizer.svg",
+    techStack: ["Python", "NLTK"],
+    featured: false,
+    links: {
+      source: "https://github.com/capt-farvez/ai-chat-log-summarizer-script",
+    },
+    date: "2025-01-01",
+  },
+  {
+    slug: "kubernetes-microservices-demo",
+    title: "K8s Microservices Demo",
+    description:
+      "A practical Kubernetes microservices demo with FastAPI services and API gateway.",
+    longDescription:
+      "A comprehensive Kubernetes microservices demonstration featuring three interconnected FastAPI services with KrakenD API Gateway integration. Supports multiple deployment modes including Docker Compose, Kubernetes, and local development. Includes health checks, service discovery, auto-generated Swagger documentation, and detailed deployment guides for all environments. Built as a production-ready learning resource for microservices architecture.",
+    category: "tool",
+    coverImage: "/images/projects/tools/k8s-microservices.svg",
+    techStack: ["Python", "FastAPI", "Docker", "Kubernetes", "KrakenD"],
+    featured: false,
+    links: {
+      source: "https://github.com/capt-farvez/kubernetes-microservices-demo",
+    },
+    date: "2025-02-01",
+  },
 ];

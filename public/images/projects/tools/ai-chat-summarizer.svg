@@ -1,0 +1,24 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#18181b"/>
+  <!-- Accent circle -->
+  <circle cx="600" cy="260" r="80" fill="#06b6d4" opacity="0.15"/>
+  <!-- Chat bubble with brain/AI icon -->
+  <g transform="translate(600, 260)" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Chat bubble -->
+    <path d="M-30,-24 L30,-24 Q38,-24 38,-16 L38,10 Q38,18 30,18 L6,18 L-4,30 L-4,18 L-30,18 Q-38,18 -38,10 L-38,-16 Q-38,-24 -30,-24 Z" fill="#06b6d4" opacity="0.1" stroke="#06b6d4"/>
+    <!-- Brain/AI neural pattern inside bubble -->
+    <circle cx="-12" cy="-6" r="5" stroke-width="2"/>
+    <circle cx="12" cy="-6" r="5" stroke-width="2"/>
+    <circle cx="0" cy="6" r="5" stroke-width="2"/>
+    <!-- Connections -->
+    <line x1="-8" y1="-3" x2="-3" y2="3"/>
+    <line x1="8" y1="-3" x2="3" y2="3"/>
+    <line x1="-7" y1="-6" x2="7" y2="-6"/>
+  </g>
+  <!-- Project name -->
+  <text x="600" y="390" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700">AI Chat Summarizer</text>
+  <!-- Subtitle -->
+  <text x="600" y="425" text-anchor="middle" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="18">Chat Log Analysis Tool</text>
+  <!-- Accent line -->
+  <rect x="560" y="445" width="80" height="3" rx="1.5" fill="#06b6d4" opacity="0.6"/>
+</svg>
