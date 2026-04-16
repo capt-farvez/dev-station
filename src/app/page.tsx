@@ -1,5 +1,6 @@
 import HeroSection from "@/components/layout/HeroSection";
 import ProjectGrid from "@/components/projects/ProjectGrid";
+import TurnstileGate from "@/components/TurnstileGate";
 import { projects } from "@/data/projects";
 import { getFeaturedProjects } from "@/lib/utils";
 import Link from "next/link";
@@ -9,7 +10,7 @@ export default function Home() {
   const games = projects.filter((p) => p.category === "game");
 
   return (
-    <>
+    <TurnstileGate>
       <HeroSection />
 
       {/* Featured Projects */}
@@ -57,6 +58,6 @@ export default function Home() {
           </div>
         </section>
       )}
-    </>
+    </TurnstileGate>
   );
 }
