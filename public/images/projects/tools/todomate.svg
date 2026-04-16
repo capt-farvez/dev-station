@@ -1,0 +1,21 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#18181b"/>
+  <circle cx="600" cy="260" r="80" fill="#10b981" opacity="0.15"/>
+  <!-- Checkbox/task list icon -->
+  <g transform="translate(600,260)" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Checkbox 1 (checked) -->
+    <rect x="-30" y="-30" width="20" height="20" rx="3" fill="#10b981" opacity="0.2"/>
+    <polyline points="-25,-20 -22,-15 -15,-27" stroke-width="2.5"/>
+    <line x1="-2" y1="-20" x2="30" y2="-20"/>
+    <!-- Checkbox 2 (checked) -->
+    <rect x="-30" y="-2" width="20" height="20" rx="3" fill="#10b981" opacity="0.2"/>
+    <polyline points="-25,8 -22,13 -15,1" stroke-width="2.5"/>
+    <line x1="-2" y1="8" x2="25" y2="8"/>
+    <!-- Checkbox 3 (empty) -->
+    <rect x="-30" y="26" width="20" height="20" rx="3" fill="#10b981" opacity="0.1"/>
+    <line x1="-2" y1="36" x2="20" y2="36"/>
+  </g>
+  <text x="600" y="390" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700">TodoMate</text>
+  <text x="600" y="425" text-anchor="middle" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="18">Task Management App</text>
+  <rect x="560" y="445" width="80" height="3" rx="1.5" fill="#10b981" opacity="0.6"/>
+</svg>

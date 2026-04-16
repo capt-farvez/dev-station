@@ -1,0 +1,21 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#18181b"/>
+  <circle cx="600" cy="260" r="80" fill="#8b5cf6" opacity="0.15"/>
+  <!-- Document/paper icon -->
+  <g transform="translate(600,260)" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Paper -->
+    <rect x="-22" y="-35" width="44" height="55" rx="3" fill="#8b5cf6" opacity="0.15"/>
+    <!-- Folded corner -->
+    <path d="M22,-35 L22,-20 L7,-35 Z" fill="#8b5cf6" opacity="0.25" stroke="#8b5cf6"/>
+    <!-- Text lines -->
+    <line x1="-12" y1="-15" x2="12" y2="-15"/>
+    <line x1="-12" y1="-5" x2="12" y2="-5"/>
+    <line x1="-12" y1="5" x2="8" y2="5"/>
+    <!-- Magnifying glass -->
+    <circle cx="18" cy="18" r="12" fill="none" stroke="#8b5cf6" stroke-width="2.5"/>
+    <line x1="26" y1="26" x2="34" y2="34" stroke-width="3"/>
+  </g>
+  <text x="600" y="390" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700">ResearchLog</text>
+  <text x="600" y="425" text-anchor="middle" fill="#a1a1aa" font-family="system-ui, -apple-system, sans-serif" font-size="18">Research Paper Repository</text>
+  <rect x="560" y="445" width="80" height="3" rx="1.5" fill="#8b5cf6" opacity="0.6"/>
+</svg>

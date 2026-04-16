@@ -2,6 +2,37 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    slug: "bss-rms",
+    title: "BSS Restaurant Management System",
+    description:
+      "A full-stack restaurant management system with orders, analytics, expense tracking, and real-time dashboards.",
+    longDescription:
+      "BSS RMS is a comprehensive restaurant management platform built for Bangladesh Software Solution. The Angular SPA frontend paired with a clean architecture ASP.NET Core API covers the full restaurant workflow. Features include JWT authentication with sign-up/sign-in, an employee management module with image uploads, table management with employee-to-table assignments, a complete food inventory system, and a powerful order management flow with six status stages (Pending, Confirmed, Preparing, PreparedToServe, Served, Paid). The new-order page features infinite scroll food selection with a draggable floating cart. An expense tracking module records operational costs, and the Reports & Analytics page provides daily/monthly/yearly breakdowns of sales, expenses, and revenue with interactive bar and pie charts powered by ngx-charts. The real-time dashboard shows today's orders, table occupancy, available tables, total employees, recent orders, and top-selling items with revenue. Built with repository pattern, dependency injection, AutoMapper, Entity Framework Core, and fully documented via Swagger.",
+    category: "web",
+    coverImage: "/images/projects/web/bss-rms.svg",
+    techStack: ["Angular", "ASP.NET Core", "TypeScript", "SQL Server", "Tailwind CSS", "Entity Framework"],
+    featured: true,
+    links: {
+      live: "https://bss-rms.vercel.app/",
+      source: "https://github.com/capt-farvez/bss-rms",
+    },
+    date: "2025-10-01",
+  },
+  {
+    slug: "obemaster",
+    title: "OBEmaster",
+    description:
+      "A web application for Outcome-Based Education (OBE) management, supporting 12,000+ student assessments.",
+    longDescription:
+      "OBEmaster is a comprehensive web application designed to streamline Outcome-Based Education (OBE) processes in universities, co-developed during final year at UAP. Built using Django REST Framework on the backend and React.js with Tailwind CSS on the frontend, it supports 12,000+ student assessments, generating in-depth results and OBE-aligned reports. Features include Google OAuth integration for secure account management, advanced analytics and reporting system for academic assessment. Currently under review for official use at the University of Asia Pacific.",
+    category: "web",
+    coverImage: "/images/projects/web/obemaster.svg",
+    techStack: ["Django REST Framework", "React.js", "Tailwind CSS", "PostgreSQL", "Google OAuth"],
+    featured: true,
+    links: {},
+    date: "2025-08-01",
+  },
+  {
     slug: "ml-diabetes-predictor",
     title: "ML Diabetes Predictor",
     description:
@@ -19,23 +50,6 @@ export const projects: Project[] = [
     date: "2025-06-10",
   },
   {
-    slug: "bss-rms",
-    title: "BSS Restaurant Management System",
-    description:
-      "A full-stack restaurant management system with orders, analytics, expense tracking, and real-time dashboards.",
-    longDescription:
-      "BSS RMS is a comprehensive restaurant management platform built for Bangladesh Software Solution. The Angular SPA frontend paired with a clean architecture ASP.NET Core API covers the full restaurant workflow. Features include JWT authentication with sign-up/sign-in, an employee management module with image uploads, table management with employee-to-table assignments, a complete food inventory system, and a powerful order management flow with six status stages (Pending, Confirmed, Preparing, PreparedToServe, Served, Paid). The new-order page features infinite scroll food selection with a draggable floating cart. An expense tracking module records operational costs, and the Reports & Analytics page provides daily/monthly/yearly breakdowns of sales, expenses, and revenue with interactive bar and pie charts powered by ngx-charts. The real-time dashboard shows today's orders, table occupancy, available tables, total employees, recent orders, and top-selling items with revenue. Built with repository pattern, dependency injection, AutoMapper, Entity Framework Core, and fully documented via Swagger.",
-    category: "web",
-    coverImage: "/images/projects/web/bss-rms.svg",
-    techStack: ["Angular", "ASP.NET Core", "TypeScript", "SQL Server", "Tailwind CSS", "Entity Framework"],
-    featured: true,
-    links: {
-      live: "https://restaurant.farvez.me",
-      source: "https://github.com/capt-farvez/bss-rms",
-    },
-    date: "2025-10-01",
-  },
-  {
     slug: "siderian-cloud-admin",
     title: "Siderian Cloud Admin",
     description:
@@ -46,10 +60,24 @@ export const projects: Project[] = [
     coverImage: "/images/projects/web/siderian-cloud-admin.svg",
     techStack: ["ASP.NET Core", "Angular", "TypeScript", "SQL Server"],
     featured: true,
-    links: {
-      source: "https://github.com/your-username/siderian-cloud-admin",
-    },
+    links: {},
     date: "2025-12-01",
+  },
+  {
+    slug: "bestdeal",
+    title: "BestDeal",
+    description:
+      "A comparative shopping web application that finds the best prices across multiple online platforms.",
+    longDescription:
+      "BestDeal is a powerful comparative shopping web application that empowers users to find the best prices for products across various online platforms. Built with Python and Django, it features real-time price comparison across multiple e-commerce platforms, an integrated chatbot for natural user interaction and shopping assistance, advanced web scraping capabilities for accurate price tracking, and a user-friendly interface for seamless shopping experience.",
+    category: "web",
+    coverImage: "/images/projects/web/bestdeal.svg",
+    techStack: ["Python", "Django", "Web Scraping", "RESTful APIs"],
+    featured: true,
+    links: {
+      source: "https://github.com/capt-farvez/BestDeal",
+    },
+    date: "2025-03-01",
   },
   {
     slug: "dev-station",
@@ -61,98 +89,111 @@ export const projects: Project[] = [
     category: "web",
     coverImage: "/images/projects/web/dev-station.svg",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    featured: true,
+    featured: false,
     links: {
-      live: "https://dev-station.vercel.app",
-      source: "https://github.com/your-username/dev-station",
+      live: "https://farvez.me/dev-station/",
+      source: "https://github.com/capt-farvez/dev-station",
     },
     date: "2026-03-28",
   },
   {
-    slug: "ai-image-generator",
-    title: "AI Image Generator",
+    slug: "researchlog",
+    title: "ResearchLog",
     description:
-      "Generate stunning images from text prompts using state-of-the-art AI models.",
+      "An online research paper repository for the University of Asia Pacific community.",
     longDescription:
-      "An AI-powered image generation tool that leverages diffusion models to create images from natural language descriptions. Features include prompt suggestions, image history, style presets, and batch generation.",
-    category: "ai",
-    coverImage: "/images/projects/ai/ai-image-generator.svg",
-    techStack: ["Python", "FastAPI", "React", "Stable Diffusion"],
-    featured: true,
-    links: {
-      live: "https://ai-image-gen.example.com",
-      source: "https://github.com/your-username/ai-image-generator",
-    },
-    date: "2025-09-15",
-  },
-  {
-    slug: "smart-note-desktop",
-    title: "Smart Note",
-    description:
-      "A cross-platform desktop note-taking app with AI-powered organization.",
-    longDescription:
-      "Smart Note is a desktop application built with Electron that provides an intelligent note-taking experience. Features include AI-powered auto-tagging, full-text search, markdown support, and cloud sync across devices.",
-    category: "desktop",
-    coverImage: "/images/projects/desktop/smart-note.svg",
-    techStack: ["Electron", "React", "TypeScript", "SQLite"],
+      "ResearchLog is an innovative online platform exclusively designed for the University of Asia Pacific community, enabling researchers to easily upload and share their valuable research papers and publications. It features advanced search and filtering functionalities across various disciplines, easy navigation through different categories and related works, and real-time updates on the latest developments in respective fields.",
+    category: "web",
+    coverImage: "/images/projects/web/researchlog.svg",
+    techStack: ["Web Development"],
     featured: false,
-    links: {
-      source: "https://github.com/your-username/smart-note",
-    },
-    downloads: {
-      windows: "/downloads/smart-note-setup.exe",
-      mac: "/downloads/smart-note.dmg",
-      linux: "/downloads/smart-note.AppImage",
-    },
-    date: "2025-06-20",
+    links: {},
+    date: "2024-12-01",
   },
   {
-    slug: "space-invaders",
-    title: "Space Invaders",
+    slug: "weatherspotter",
+    title: "WeatherSpotter",
     description:
-      "A classic Space Invaders clone built with vanilla JavaScript and HTML5 Canvas.",
+      "A web-based weather application for checking weather conditions worldwide.",
     longDescription:
-      "Relive the classic arcade experience! This Space Invaders game is built entirely with vanilla JavaScript and HTML5 Canvas. Features include progressive difficulty, power-ups, high score tracking, and retro sound effects.",
-    category: "game",
-    coverImage: "/images/projects/games/space-invaders.svg",
-    techStack: ["JavaScript", "HTML5 Canvas", "CSS"],
-    featured: true,
-    links: {
-      play: "/play/space-invaders",
-      source: "https://github.com/your-username/space-invaders",
-    },
-    date: "2025-04-10",
-  },
-  {
-    slug: "snake-game",
-    title: "Snake Game",
-    description: "The timeless Snake game with modern visuals and smooth controls.",
-    longDescription:
-      "A modern take on the classic Snake game. Built with TypeScript and HTML5 Canvas featuring smooth animations, multiple themes, difficulty levels, and a global leaderboard.",
-    category: "game",
-    coverImage: "/images/projects/games/snake-game.svg",
-    techStack: ["TypeScript", "HTML5 Canvas"],
+      "WeatherSpotter is a user-friendly weather application built with Django REST Framework that allows users to check weather conditions for any location worldwide. It features location-based weather search functionality, real-time weather data using REST APIs, a user-friendly interface for location selection, and accurate weather forecasts for any selected location.",
+    category: "web",
+    coverImage: "/images/projects/web/weatherspotter.svg",
+    techStack: ["Django", "Django REST Framework", "Weather APIs"],
     featured: false,
-    links: {
-      play: "/play/snake-game",
-      source: "https://github.com/your-username/snake-game",
-    },
-    date: "2025-03-05",
+    links: {},
+    date: "2024-10-01",
   },
   {
-    slug: "cli-task-manager",
-    title: "CLI Task Manager",
+    slug: "todomate",
+    title: "TodoMate",
     description:
-      "A fast, keyboard-driven task manager for the terminal.",
+      "A simple and intuitive task management app to stay organized and manage daily tasks.",
     longDescription:
-      "A terminal-based task manager built with Go. Features include priority-based sorting, due date reminders, project grouping, and seamless integration with Git workflow. Perfect for developers who live in the terminal.",
+      "TodoMate is designed to help you stay organized and manage your daily tasks efficiently, ensuring that nothing falls through the cracks. Features include creating and tracking daily tasks, prioritizing tasks based on importance, a simple and intuitive user interface, task completion tracking and management, and task categorization to stay organized.",
     category: "tool",
-    coverImage: "/images/projects/tools/cli-task-manager.svg",
-    techStack: ["Go", "Cobra", "SQLite"],
+    coverImage: "/images/projects/tools/todomate.svg",
+    techStack: ["Web Development"],
     featured: false,
     links: {
-      source: "https://github.com/your-username/cli-task-manager",
+      source: "https://github.com/capt-farvez/TodoMate",
     },
-    date: "2025-07-12",
+    date: "2024-08-01",
+  },
+  {
+    slug: "quizz",
+    title: "Quizz",
+    description:
+      "An interactive online education platform for enhancing knowledge through quizzes.",
+    longDescription:
+      "Quizz is an engaging platform designed to help students enhance their knowledge through exciting quizzes while tracking their progress and improvement over time. It offers a wide variety of quizzes across different subjects and topics, multiple quiz formats including multiple-choice, fill-in-the-blanks, and matching exercises, progress tracking and performance measurement, and a dynamic learning experience combining knowledge acquisition with self-assessment.",
+    category: "web",
+    coverImage: "/images/projects/web/quizz.svg",
+    techStack: ["Web Development"],
+    featured: false,
+    links: {},
+    date: "2024-06-01",
+  },
+  {
+    slug: "ashol",
+    title: "Ashol",
+    description:
+      "A web-based platform to verify the authenticity and validity of restaurant branches.",
+    longDescription:
+      "Ashol is a web-based application designed to empower customers by providing a convenient and user-friendly platform to verify the authenticity and validity of restaurant branches in their vicinity. It features location-based restaurant search, a user-friendly interface for restaurant verification, and serves as a reliable resource for customer decision-making, promoting trust and transparency in restaurant selection.",
+    category: "web",
+    coverImage: "/images/projects/web/ashol.svg",
+    techStack: ["Web Development"],
+    featured: false,
+    links: {},
+    date: "2024-04-01",
+  },
+  {
+    slug: "perahin",
+    title: "Perahin",
+    description:
+      "A student data management system built with C for managing academic records.",
+    longDescription:
+      "Perahin is a comprehensive student data management system developed using C programming language, designed to help teachers efficiently store and manage student information and track academic progress. Features include storing and organizing student basic details (name, DOB, contact information), managing academic records and performance tracking, attendance management system, disciplinary records management, and a streamlined data management interface.",
+    category: "desktop",
+    coverImage: "/images/projects/desktop/perahin.svg",
+    techStack: ["C"],
+    featured: false,
+    links: {},
+    date: "2023-12-01",
+  },
+  {
+    slug: "banking-system",
+    title: "Banking System",
+    description:
+      "A secure banking application with account management, transfers, and bill payment services.",
+    longDescription:
+      "A comprehensive banking application that provides a wide range of convenient services while ensuring the confidentiality and integrity of customer data through advanced security measures. Features include account balance inquiries and statements, fund transfers between accounts, bill payment services, loan application and management, advanced encryption techniques for data security, and robust authentication protocols.",
+    category: "desktop",
+    coverImage: "/images/projects/desktop/banking-system.svg",
+    techStack: ["Programming"],
+    featured: false,
+    links: {},
+    date: "2023-10-01",
   },
 ];

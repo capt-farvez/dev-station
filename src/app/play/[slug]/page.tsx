@@ -10,11 +10,9 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return projects
-    .filter((p) => p.category === "game")
-    .map((game) => ({
-      slug: game.slug,
-    }));
+  const games = projects.filter((p) => p.category === "game");
+  if (games.length === 0) return [{ slug: "_placeholder" }];
+  return games.map((game) => ({ slug: game.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
